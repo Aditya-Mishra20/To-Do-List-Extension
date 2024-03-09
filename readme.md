@@ -15,19 +15,27 @@ Think, Write, Execute, with this TO-DO list Extension.
 
 ### version - 2 (coming soon...)
 * include calender , to keep track of their daily task.
-* improved technology
+* improved technology.
+* fix bugs.
 
 
 ## Glimpses
 * At Start, this is the initial display.
 
-![Initial](./to-do%20glimples/1.png)
+![Initial](1.png)
 
 * Random Quotes are generated on everytime extension open.
 * If Quotes are not appeared that means **limit is reached**.
-![With Quotes](./to-do%20glimples/2.png)
-![Tasks](./to-do%20glimples/3.png)
-![Cleared](./to-do%20glimples/4.png)
+  
+![With Quotes](2.png)
+
+* Add your daily tasks and strike completed tasks.
+
+![Tasks](3.png)
+
+* If you want to delete task you have to do clear all only.
+
+![Cleared](4.png)
 ## How to download on your system?
 
 * Download the extension file (usually a ".crx" or ".zip" file).
@@ -36,11 +44,11 @@ Think, Write, Execute, with this TO-DO list Extension.
 
 * Type chrome://extensions into the address bar and press Enter.
 
-![](./to-do%20glimples/hwt%201.png)
+![](hwt%201.png)
 
 * Enable Developer mode by toggling the switch at the top right corner of the Extensions page.
 
-![](./to-do%20glimples/hwt%202.png)
+![](hwt%202.png)
 
 * Locate the extension file on your computer (typically in the "Downloads" folder).
 
