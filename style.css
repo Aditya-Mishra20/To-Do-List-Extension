@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: rgb(252, 137, 137);
+  font-family: "Roboto", sans-serif;
+}
+html,
+body {
+  width: 100%;
+  height: fit-content;
+}
+::selection{
+  color: rgb(146, 255, 126)  ;
+}
+.popup {
+  width: 400px;
+  /* height: fit-content; */
+  background-color: rgb(32, 33, 36);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+}
+.head {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.head > i {
+  font-size: large;
+}
+.head > h2 {
+  font-weight: 300;
+}
+/* .head>h2:hover{
+  text-decoration-line: underline;
+} */
+.quote-box {
+  min-width: 20px;
+  min-height: 20px;
+  border: 2px solid rgb(146, 255, 126);
+  border-radius: 0 15px 0 15px;
+  padding: 5px;
+  text-align: center;
+}
+.quote-box > p {
+  font-size: medium;
+  font-family: "Dancing Script";
+  color: rgb(192, 195, 203);
+}
+.leaf{
+  display: flex;
+  align-items: baseline;
+}
+.sm-leaf{
+  height: 15px;
+  width: 15px;
+  border: 2px solid rgb(146, 255, 126);
+  border-radius: 10px 0 10px 0;
+
+}
+
+.main {
+  width: 300px;
+  min-height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  padding: 30px;
+  flex-direction: column;
+  position: relative;
+  border-radius: 30px;
+  background: #212121;
+  box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60);
+}
+#addtask {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+#addtask > i {
+  font-size: medium;
+  cursor: pointer;
+}
+#addtask > i:hover {
+  color: rgba(252, 137, 137, 0.429);
+}
+
+#addtask > input {
+  height: 30px;
+  /* border: 0 0 1px 0 solid white; */
+  border: none;
+  border-bottom: 1px solid rgb(252, 137, 137);
+  background: inherit;
+  box-shadow: none;
+  padding-left: 10px;
+}
+
+#list-container li {
+  list-style: none;
+  padding: 5px;
+  margin: 15px;
+  user-select: none;
+  cursor: pointer;
+  border-bottom: 1px solid #525151;
+  text-align: start;
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-size: large;
+  font-style: normal;
+}
+
+#list-container li::before {
+  content: "";
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  background-image: url(./unchecked.svg);
+  background-size: cover;
+  background-position: center;
+  left: 10%;
+  text-align: center;
+}
+#list-container li.checked {
+  text-decoration: line-through;
+  color: rgba(252, 137, 137, 0.429);
+}
+#list-container li.checked::before {
+  background-image: url(./checked.svg);
+}
+
+#list-container li span {
+  position: absolute;
+  right: 10%;
+  font-size: 20px;
+}
+#list-container li span:hover {
+  content: "";
+  color: rgba(252, 137, 137, 0.429);
+}
